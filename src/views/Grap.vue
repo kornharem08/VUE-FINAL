@@ -1,17 +1,17 @@
 <template>
-<div><chartjs-bar v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-bar></div>
+<div><chartjs-doughnut v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-doughnut></div>
  
 </template>
 
 <script>    
-import axios from 'axios'
+import axios from 'axios'   
 export default {
     data(){
         return{
             labels: [],
             datasets:[{
                 data:[],
-                backgroundColor:["Red","Yellow","Purple","Red","Yellow","Purple","Red"]
+                backgroundColor:["Green","Yellow","Purple","Red","Cyan","Blue","Black","Gray","Blue","Aqua","AntiqueWhite","Gray","Blue","Aqua","AntiqueWhite"]
             }],
             option:{
                 title:{
