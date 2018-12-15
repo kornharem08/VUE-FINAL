@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
     <b-navbar toggleable="md" type="dark" variant="info">
 
@@ -52,8 +53,11 @@
 </template>
 
 <style>
+*{
+  
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+ font-family: 'Staatliches', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -65,10 +69,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #18c09c;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #dd4fd6b6;
 }
 </style>

@@ -1,6 +1,14 @@
 <template>
+
+  
 <div v-if="datasets[0].data.length >0">
-    <chartjs-doughnut v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-doughnut></div>
+
+    <div ID="tophead"><h2>Count Country Supplier List</h2></div>
+
+    <div id="grap"> <chartjs-doughnut v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-doughnut></div>
+   
+    
+    </div>
  
 </template>
 
@@ -34,7 +42,7 @@ export default {
                 title:{
                     display:true,
                     position:"bottom",
-                    text: "Fruits"
+                    text: "Country"
                 }
             }
         };
@@ -52,3 +60,12 @@ instance.datasets[0].data.push(response.data.data[i].count)}
   }
 };
 </script>
+
+<style>
+#tophead{
+    margin-top: 30px;
+}
+#grap{
+    margin-top: 40px;
+}
+</style>

@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2>Supplier List</h2>
+      <div id="tophead"> <h2>Supplier List</h2></div>
+   
      <b-row>
       <b-col md="3" class="my-1">
         <b-form-group horizontal label="Search" class="mb-0">
@@ -98,7 +99,8 @@ export default {
            fields: [ 
                {
                    key:'supplier_id',
-                   sortable :true
+                   sortable :true,
+                   
                },
                {
                     key:'company_name',
@@ -108,12 +110,12 @@ export default {
                {
                     key:'phone',
                    sortable :true,
-                   variant: 'danger'
+           
                },
                 {
                     key:'country',
                    sortable :true,
-                   variant: 'danger'
+                 
                },
                  {
           key:  'show_details'  
@@ -143,7 +145,10 @@ instance.supplier =response.data.data
 </script>
 
 <style>
-h2{
+#tophead{
     margin-top: 30px;
+}
+h2{
+    margin-top: 50px;
 }
 </style>
