@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Supplier from './views/Supplier.vue'
+import Grap from './views/Grap.vue'
 
 Vue.use(Router)
 
@@ -10,6 +12,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/supplier',
+      name: 'supplier',
+      component: Supplier
+    },
+    {
+      path: '/grap',
+      name: 'grap',
+      component: Grap
     },
     {
       path: '/about',
