@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Supplier List</h1>
+    <h2>Supplier List</h2>
      <b-row>
       <b-col md="3" class="my-1">
         <b-form-group horizontal label="Search" class="mb-0">
@@ -141,3 +141,9 @@ instance.supplier =response.data.data
   }
 }
 </script>
+
+<style>
+h2{
+    margin-top: 30px;
+}
+</style>
